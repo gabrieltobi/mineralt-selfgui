@@ -1,2 +1,2 @@
-# coinhive-selfgui
-A beautiful Coin Hive GUI for mining on a tab
+# mineralt-selfgui
+A beautiful Mineralt GUI for mining on a tab
