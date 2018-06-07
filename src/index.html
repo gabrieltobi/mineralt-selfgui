@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+
+<body>
+    <div id="error" class="text-center full-width dark-bg"></div>
+
+    <div class="box">
+        <div id="status" class="dark-bg flex-center offline">
+            <span class="circle"></span>
+            <span id="data-status" class="full-width">Offline</span>
+            <button id="start-stop">&#9658;</button>
+        </div>
+        <div class="block text-center">
+            <h1 id="data-hash-tax">-</h1>
+            <h5 class="hash-label">hashes/s</h5>
+        </div>
+        <div class="block text-center">
+            <div class="hash-box">
+                <h3 id="data-hash-total">-</h3>
+                <h5 class="hash-label">Hashes</h5>
+            </div>
+        </div>
+        <div class="block">
+            <div class="text-center">
+                <h2 id="data-power">-</h2>
+                <input class="slider" type="range" id="data-power-slide" min="1" max="100" value="100">
+                <h5 class="hash-label">Power</h5>
+            </div>
+        </div>
+        <div class="block dark-bg">
+            <div id="site-key" class="flex-center">
+                <label for="data-site-key">Miner ID:</label>
+                <input id="data-site-key" type="text">
+            </div>
+        </div>
+    </div>
+
+    <div class="links">
+        <a href="https://github.com/gabrieltobi/mineralt-selfgui" target="_blank" class="link">GitHub</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #1f4037;
+    background: -webkit-linear-gradient(to left, #99f2c8, #1f4037);
+    background: linear-gradient(to left, #99f2c8, #1f4037);
+    font-family: sans-serif;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: 200ms all ease;
+    width: 48px;
+    height: 40px;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+input[type='range'] {
+    width: 100%;
+    margin: 0;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.dark-bg {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.block {
+    padding: 6px 12px;
+    &-vertical {
+        padding: 6px 0;
+    }
+    &-horizontal {
+        padding: 0 12px;
+    }
+}
+
+.hash-label {
+    font-style: italic;
+}
+
+.hash-box {
+    display: inline-block;
+    min-width: 150px;
+    position: relative;
+    &:not(:last-child) {
+        &:after {
+            content: '';
+            border-right: 1px solid #fff;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+#status {
+    .circle {
+        background-color: #99f2c8;
+        border-radius: 50%;
+        padding: 5px;
+        margin: 0 8px;
+    }
+    &.offline {
+        .circle {
+            background-color: #d02626;
+        }
+    }
+}
+
+#site-key {
+    opacity: 0.5;
+    font-size: 0.7em;
+    label {
+        white-space: nowrap;
+        padding-right: 2px;
+    }
+    input {
+        background-color: transparent;
+        border: none;
+        color: inherit;
+        font-size: inherit;
+        width: 100%;
+        padding: 4px 2px;
+    }
+}
+
+#error {
+    color: #d0a237;
+    line-height: 1.8em;
+}
+
+.links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    .link {
+        color: white;
+        padding: 8px;
+        display: inline-block;
+        &:not(:hover) {
+            text-decoration: none;
+        }
+    }
+}
